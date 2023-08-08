@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+    <link href = '../css/index.css' rel = 'stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body style = "background-image: url('../images/bubblesO.png'); width: 100%;">
+    <div class = "container justify-content-center" style = "color : white; font-size: 150px; font-family : f1; margin-left: auto; margin-right: auto; width: 450px;">
+        <div class = 'row'> 
+            <div class = "col-md-4"><p id = 'score' style = "color : red; font-size: 45px;"></p></div>
+            <div class = "col-md-4"></div>
+            <div class = "col-md-4"><p id = 'best' style = "color : red; font-size: 45px;"></p></div>
+        </div>
+        <div class = 'row'>
+            <div class = 'col-md-8'>Game Over</div>
+        </div>
+        <div class = 'row'>
+            <div class = 'col-md-8'>
+            <button onclick = "window.location.href = 'BubbleTrouble.html'" style = "font-size: 30px; width: 140px; height : 90px; border-radius: 200px; font-family: f2;">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container" style = "color: white; float: right; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: 70px; float : right; width: 17%;">
+        Developed by GamesAdda.
+    </div>
+
+    <script>
+        document.getElementById('score').innerHTML = "Score : " +  sessionStorage.getItem('score');
+        document.getElementById('best').innerHTML = "Best : " +  sessionStorage.getItem('best');
+
+    </script>
+</body>
+</html>

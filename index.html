@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Trouble</title>
+    <link href = 'css/index.css' rel = 'stylesheet'>
+
+</head>
+<body style = "background-image: url('images/bubblesO.png'); width: 100%;">
+    <div class = "container" style = "color : white; font-size: 150px; font-family : f1; margin: 150px 395px;">
+        <div class = 'row'>
+            Bubble
+        </div>
+        <div class = 'row'>
+            Trouble
+        </div>
+        <div class = 'row'>
+            <button onclick = "fun()">Play</button>
+        </div>
+    </div>
+
+    <div class = "container" style = "color: white; float: right; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: 120px;">
+        Developed by GamesAdda.
+    </div>
+    <script>
+        function fun(){
+            sessionStorage.setItem('best',0);
+            window.location.href = 'layout/BubbleTrouble.html';
+        }
+    </script>
+</body>
+</html>
